@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFest 2026 | Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="committee.html">Committee</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+      </ul>
+    </nav>
+    <a href="index.html" class="logo-link">
+      <img src="images/logo.png" class="nav-logo" alt="TechFest logo">
+    </a>
+  </header>
+
+  <section class="page-banner">
+
+    <h1>Registration</h1>
+  </section>
+
+  <main>
+    <section>
+      <form action="#" method="post">
+
+
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <div class="form-row">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" autocomplete="name" required minlength="3">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9]{10}" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Academic Details</legend>
+
+          <div class="form-row">
+            <label for="college">College</label>
+            <input type="text" id="college" name="college" required>
+          </div>
+
+          <div class="form-row">
+            <label for="year">Year of Study</label>
+            <select id="year" name="year" required>
+              <option value="">-- Select --</option>
+              <option value="1">First Year</option>
+              <option value="2">Second Year</option>
+              <option value="3">Third Year</option>
+              <option value="4">Final Year</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Event Preference</legend>
+
+          <div class="form-row">
+            <span class="form-row-label">Choose one event</span>
+            <div class="option-group">
+              <label class="option-item"><input type="radio" name="event" value="hackathon" required> Hackathon</label>
+              <label class="option-item"><input type="radio" name="event" value="robo"> Robo Race</label>
+              <label class="option-item"><input type="radio" name="event" value="quiz"> Tech Quiz</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <span class="form-row-label">Add-ons</span>
+            <div class="option-group">
+              <label class="option-item"><input type="checkbox" name="addon" value="tshirt"> Event T-Shirt</label>
+              <label class="option-item"><input type="checkbox" name="addon" value="lunch"> Lunch Pass</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="notes">Message (optional)</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TechFest, College of Engineering.</p>
+  </footer>
+
+</body>
+</html>
